@@ -1,0 +1,100 @@
+
+.ser{
+    padding:10px 1px 1px 36px;
+    overflow:hidden;
+}
+
+#sidenav1 h2 {
+    font-size:21px;
+    padding-left:16px;
+    margin:-4px 0 4px 0;
+    width:204px;
+}
+#sidenav1 a {font-family:"Segoe UI",Arial,sans-serif;text-decoration:none;display:block;padding:2px 1px 1px 16px;}
+#sidenav1 a:hover,#sidenav1 a:focus {color:#000000;background-color:#cccccc;}
+#sidenav1 a.active {background-color:#4CAF50;color:whitesmoke}
+
+
+
+#leftmenuinner {
+    position:fixed;
+    top:0;
+    padding-top:112px;
+    padding-bottom:0;
+    height:100%;
+    width:220px;
+    color: gray;
+    background-color:transparent;
+}
+#leftmenuinnerinner {
+    height:100%;
+    width:100%;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    padding-top:20px;
+    color: gray;
+}
+
+@media (max-width:992px) {
+    .top {height:100px}
+    .top img {display:block;margin:auto;}
+    .top  {position:relative;top:0;width:100%;text-align:center;margin:auto}
+
+    #sidenav1 {width:260px;
+        box-shadow:0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+    #sidenav1 h2 {font-size:26px;width:100%;}
+    #sidenav1 a {padding:3px 2px 3px 24px;font-size:17px}
+    #leftmenuinner {
+        overflow:auto;
+        -webkit-overflow-scrolling:touch;
+        height:100%;
+        position:relative;
+        width:auto;
+        padding-top:0;
+        background-color:#f1f1f1;
+    }
+    #leftmenuinnerinner {overflow-y:scroll}
+
+
+    .ser{ overflow:auto;
+        -webkit-overflow-scrolling:touch;
+        overflow-y:scroll;}
+}
+
+
+
+
+.content {
+    width: 55%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    color: beige;
+}
+.content h2{text-align: center;}
+
+.p{width: 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;}
+
+.fancy {
+    padding : 1em;
+    width: 100%;
+    height: 275px;
+    box-sizing: border-box;
+
+
+    background-color: transparent;
+
+    background-image: linear-gradient(175deg, rgba(0,0,0,0) 95%, #8da389 95%),
+    linear-gradient( 85deg, rgba(0,0,0,0) 95%, #8da389 95%),
+    linear-gradient(175deg, rgba(0,0,0,0) 90%, #b4b07f 90%),
+    linear-gradient( 85deg, rgba(0,0,0,0) 92%, #b4b07f 92%),
+    linear-gradient(175deg, rgba(0,0,0,0) 85%, #c5a68e 85%);
+
+
+}
+

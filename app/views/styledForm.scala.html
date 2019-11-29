@@ -1,0 +1,28 @@
+@import helper._
+
+@(userForm: Form[BasicForm])(implicit request: RequestHeader,messages: Messages)
+
+@contact("Scala Play forms tutorial") {
+    <h1>Scala Play forms tutorial</h1>
+    <div class="container" style="color: #f1f1f1">
+
+    @form(action = routes.BasicController.simpleFormPost()) {
+        @CSRF.formField
+
+        @inputText(userForm("name"),
+            '_label -> "Custom label",
+            '_id -> "idForTheTopDlElement",
+            '_help -> "Custom help",
+            '_error -> Some(FormError("error-key", Seq("My custom error message"), Seq.empty)),
+            '_showErrors -> false,
+            'class -> "cool-class",
+            Symbol("data-lol") -> "lol")
+
+        @inputText(userForm("age"),
+            '_showConstraints -> false)
+
+
+        <input type="submit" value="Submit">
+    }
+    </div>
+}

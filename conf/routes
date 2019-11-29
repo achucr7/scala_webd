@@ -1,0 +1,78 @@
+
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /              controllers.HomeController.index
+
+
+GET   /about           controllers.HomeController.about()
+
+GET   /contact         controllers.BasicController.fo()
+
+GET   /co              controllers.HomeController.contact()
+
+GET   /services        controllers.HomeController.services()
+
+GET   /services/a      controllers.HomeController.a()
+GET   /services/b      controllers.HomeController.b()
+GET   /services/c      controllers.HomeController.c()
+GET   /services/d      controllers.HomeController.d()
+GET   /services/e      controllers.HomeController.e()
+GET   /services/f      controllers.HomeController.f()
+GET   /services/g      controllers.HomeController.g()
+GET   /services/h      controllers.HomeController.h()
+GET   /services/i      controllers.HomeController.i()
+GET   /services/j      controllers.HomeController.j()
+GET   /services/k      controllers.HomeController.k()
+GET   /services/l      controllers.HomeController.l()
+GET   /services/m      controllers.HomeController.m()
+GET   /services/n      controllers.HomeController.n()
+GET   /services/o      controllers.HomeController.o()
+GET   /services/p      controllers.HomeController.p()
+GET   /services/q      controllers.HomeController.q()
+GET   /services/r      controllers.HomeController.r()
+GET   /services/s      controllers.HomeController.s()
+GET   /services/t      controllers.HomeController.t()
+GET   /services/u      controllers.HomeController.u()
+GET   /services/v      controllers.HomeController.v()
+GET   /services/w      controllers.HomeController.w()
+GET   /services/x      controllers.HomeController.x()
+GET   /services/y      controllers.HomeController.y()
+GET   /services/z      controllers.HomeController.z()
+
+
+GET     /form                      controllers.BasicController.fo()
+
+GET     /simpleForm                 controllers.BasicController.simpleForm
+POST    /simpleForm                 controllers.BasicController.simpleFormPost
+
+GET     /filledForm                 controllers.BasicController.filledForm
+
+GET     /complexForm                controllers.BasicController.complexForm
+POST    /complexForm                controllers.BasicController.complexFormPost
+
+GET     /inputTypesForm             controllers.BasicController.inputTypesForm
+POST    /inputTypesForm             controllers.BasicController.inputTypesFormPost
+
+GET     /fileForm                   controllers.BasicController.fileForm
+POST    /fileForm                   controllers.BasicController.fileFormPost
+
+GET     /nestedForm                 controllers.AdvancedController.nestedForm
+POST    /nestedForm                 controllers.AdvancedController.nestedFormPost
+
+GET     /customBindForm             controllers.AdvancedController.customBindForm
+POST    /customBindForm             controllers.AdvancedController.customBindFormPost
+
+GET     /styledForm                 controllers.AdvancedController.styledForm
+POST    /styledForm                 controllers.AdvancedController.styledFormPost
+
+GET     /count                      controllers.CountController.count
+# An example controller showing how to write asynchronous code
+GET     /message                    controllers.AsyncController.message
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+      

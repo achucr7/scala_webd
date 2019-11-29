@@ -1,0 +1,30 @@
+@(userForm: Form[ConstrainedForm])(implicit request: RequestHeader,messages: Messages)
+
+@import helper._
+
+
+
+@contact("Scala Play forms") {
+
+
+<div class="container" style="color: #f1f1f1">
+
+    @form(action = routes.BasicController.complexFormPost()) {
+        @CSRF.formField
+
+        @inputText(userForm("First name"))
+        @inputText(userForm("Last name"))
+        @inputText(userForm("age"))
+        @inputText(userForm("email"))
+        @inputDate(userForm("date"))
+        @select(userForm("Country"), ConstrainedForm.Pref.values.toSeq.map(pref => pref.toString -> pref.toString))
+
+        @inputText(userForm("Subject"),
+            'rows -> 10)
+
+
+        <input type="submit" value="Submit">
+    }
+
+</div>
+}

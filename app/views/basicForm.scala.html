@@ -1,0 +1,19 @@
+@import helper._
+
+@(userForm: Form[BasicForm])(implicit request: RequestHeader ,messages: Messages)
+
+@contact("Scala Play forms tutorial") {
+    <h1>Scala Play forms tutorial</h1>
+<div class="container" style="color: #f1f1f1">
+
+    @form(action = routes.BasicController.simpleFormPost()) {
+
+        @CSRF.formField
+        @inputText(userForm("name"))
+        @inputText(userForm("age"))
+
+        <input type="submit" value="Submit">
+    }
+
+</div>
+}

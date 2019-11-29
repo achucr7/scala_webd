@@ -1,0 +1,19 @@
+@import helper._
+
+@(userForm: Form[Order])(implicit request: RequestHeader,messages: Messages)
+
+@contact("Scala Play forms tutorial") {
+    <h1>Scala Play forms tutorial</h1>
+    <div class="container" style="color: #f1f1f1">
+    @form(action = routes.AdvancedController.nestedFormPost()) {
+        @CSRF.formField
+        @inputText(userForm("clientName"))
+        @inputText(userForm("address.country"))
+        @inputText(userForm("address.city"))
+        @inputText(userForm("address.street"))
+        @inputText(userForm("address.buildingNbr"))
+
+        <input type="submit" value="Submit">
+    }
+    </div>
+}

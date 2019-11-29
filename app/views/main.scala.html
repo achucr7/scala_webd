@@ -1,0 +1,157 @@
+@*
+ * This template is called from the `index` template. This template
+ * handles the rendering of the page header and body tags. It takes
+ * two arguments, a `String` for the title of the page and an `Html`
+ * object to insert into the body of the page.
+ *@
+@(title: String)(content: Html)
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+        <title>Cosmic</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="@routes.Assets.versioned("javascripts/hello.js")"></script>
+
+        <link rel="shortcut icon" sizes="114x114" href="@routes.Assets.versioned("images/favicon.ico")">
+
+
+
+
+    </head>
+    <body  >
+
+         <div class="wrapper" >
+            <header>
+
+                <nav>
+
+                    <div class="menu-icon " >
+                        <i class="fa fa-bars fa-2x"></i>
+                    </div>
+
+                    <div class="logo">
+
+                        <a href="@routes.HomeController.index()"><img src="@routes.Assets.versioned("images/logo.png")" height="100vh" width="100%"></a>
+
+
+
+                    </div>
+
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="@routes.HomeController.about()">About</a></li>
+                            <li><a href="@routes.HomeController.services()">Services</a></li>
+                            <li><a href="@routes.BasicController.fo()">Contact</a></li>
+
+
+                        </ul>
+                    </div>
+                </nav>
+
+            </header>
+
+            <div class="content" >
+                <p >
+                    Cosmic Tech Labs is a product development software organization that specializes in the development of technology and address related processes in industries where implementation of advanced software isn't as wide spread as the others.
+
+
+
+
+
+
+                </p>
+                <p>
+
+
+                </p>
+                <p>
+
+
+                </p>
+                <p>
+
+
+                </p>
+
+
+            </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="@routes.HomeController.about()">About</a>
+            <a href="@routes.HomeController.services()">Services</a>
+            <a href="@routes.BasicController.fo()">Contact</a>
+            <a target="_top" href="@routes.HomeController.a()">a</a>
+            <a target="_top" href="@routes.HomeController.b()">b</a>
+            <a target="_top" href="@routes.HomeController.c()">c</a>
+            <a target="_top" href="@routes.HomeController.d()">d</a>
+            <a target="_top" href="@routes.HomeController.e()">e</a>
+            <a target="_top" href="@routes.HomeController.f()">f</a>
+            <a target="_top" href="@routes.HomeController.g()">g</a>
+            <a target="_top" href="@routes.HomeController.h()">h</a>
+            <a target="_top" href="@routes.HomeController.i()">i</a>
+            <a target="_top" href="@routes.HomeController.j()">j</a>
+            <a target="_top" href="@routes.HomeController.k()">k</a>
+            <a target="_top" href="@routes.HomeController.l()">l</a>
+            <a target="_top" href="@routes.HomeController.m()">m</a>
+            <a target="_top" href="@routes.HomeController.n()">n</a>
+            <a target="_top" href="@routes.HomeController.o()">o</a>
+            <a target="_top" href="@routes.HomeController.p()">p</a>
+            <a target="_top" href="@routes.HomeController.q()">q</a>
+            <a target="_top" href="@routes.HomeController.r()">r</a>
+            <a target="_top" href="@routes.HomeController.s()">s</a>
+            <a target="_top" href="@routes.HomeController.t()">t</a>
+            <a target="_top" href="@routes.HomeController.u()">u</a>
+            <a target="_top" href="@routes.HomeController.v()">v</a>
+            <a target="_top" href="@routes.HomeController.w()">w</a>
+            <a target="_top" href="@routes.HomeController.x()">x</a>
+            <a target="_top" href="@routes.HomeController.y()">y</a>
+            <a target="_top" href="@routes.HomeController.z()">z</a>
+            <a target="_top" href="@routes.HomeController.z()">---</a>
+            <a target="_top" href="@routes.HomeController.z()">---</a>
+        </div>
+
+
+        <h1 class="align-content-center" ><span onclick="openNav()" style="color: #818181"><i class="fa fa-bars fa-0.5x"></i></span></h1>
+
+
+        <footer class="footer-basic-centered">
+
+            <p class="footer-company-motto">--------------------------</p>
+
+
+            <div class="footer-right">
+
+
+
+                <div class="footer-icons">
+
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+
+                </div>
+
+            </div>
+
+            <p class="footer-company-name">Company Name &copy; 2016</p>
+
+            <p class="footer-company-motto">--------------------------</p>
+
+        </footer>
+
+
+    </body>
+</html>

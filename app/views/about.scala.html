@@ -1,0 +1,144 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>About Cosmic</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="@routes.Assets.versioned("javascripts/hello.js")"></script>
+        <link rel="shortcut icon" sizes="114x114" href="@routes.Assets.versioned("images/favicon.ico")">
+    </head>
+    <body>
+        <div class="wrapper" >
+            <header>
+
+                <nav>
+
+                    <div class="menu-icon">
+                        <i class="fa fa-bars fa-2x"></i>
+                    </div>
+
+                    <div class="logo">
+
+                        <img src="@routes.Assets.versioned("images/logo.png")" height="100vh" width="100%">
+
+                    </div>
+
+                    <div class="menu">
+                        <ul>
+                            <li><a href="@routes.HomeController.index()">Home</a></li>
+
+                            <li><a href="@routes.HomeController.services()">Services</a></li>
+                            <li><a href="@routes.BasicController.fo()">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </header>
+
+            <div class="content">
+
+                <p>
+                    Cosmic Homes started off with by developing Cosmic Homes, a lifestyle home management solution for ROAD (Residents, Owners, Associations and Developers). After initial testing and 2 years of development, a second version of the platform is under works and this is a product that addresses problems faced in the construction, realty and property management space with the use of Mobile, Blockchain, Artificial Intelligence, Machine Learning, Natural Language Processing, Computer Vision & Internet of Things (IoT)
+                </p><p>
+                    Cosmic Homes is an interface for Residents, Owners and Associations whereas, Cosmic Properties is an implementation for Developers that enables developers with the efficient management of an entire construction project right from start to end including Project Management, Inventory Management, Asset Management and Customer Relationship Management to track Sales on a daily basis.
+                </p><p>
+                    The Cosmic Network has other suites under development namely - Cosmic Hotels and Cosmic Confluence - which is an implementation for Retail Properties and Offices)
+            </p><p>
+                    Cosmic Tech Labs also works with clients within multiple industries including, but not limited to, FinTech, Media (Digital and Satellite Broadcasting), Digital Media Automation for organizations and individuals, etc.
+                </p>
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <script type="text/javascript">
+
+                // Menu-toggle button
+
+
+
+
+
+
+
+                var YTMenu = (function() {
+
+                    function init() {
+
+                        [].slice.call( document.querySelectorAll( '.dr-menu' ) ).forEach( function( el, i ) {
+
+                            var trigger = el.querySelector( 'div.dr-trigger' ),
+                                    icon = trigger.querySelector( 'span.dr-icon-menu' ),
+                                    open = false;
+
+                            trigger.addEventListener( 'click', function( event ) {
+                                if( !open ) {
+                                    el.className += ' dr-menu-open';
+                                    open = true;
+                                }
+                            }, false );
+
+                            icon.addEventListener( 'click', function( event ) {
+                                if( open ) {
+                                    event.stopPropagation();
+                                    open = false;
+                                    el.className = el.className.replace(/\bdr-menu-open\b/,'');
+                                    return false;
+                                }
+                            }, false );
+
+                        } );
+
+                    }
+
+                    init();
+
+                })();
+        </script>
+
+        <footer class="footer-basic-centered">
+
+            <p class="footer-company-motto">--------------------------</p>
+
+
+            <div class="footer-right">
+
+
+
+                <div class="footer-icons">
+
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+
+                </div>
+
+            </div>
+
+            <p class="footer-company-name">Company Name &copy; 2016</p>
+
+            <p class="footer-company-motto">--------------------------</p>
+
+        </footer>
+
+
+
+
+
+
+    </body>
+</html>
